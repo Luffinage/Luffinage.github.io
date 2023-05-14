@@ -1,0 +1,29 @@
+=circle
+    &::before
+        content: ''
+        position: absolute
+        left: 0
+        background: $main-color-1
+        width: 36px
+        height: 36px
+        border-radius: 50%
+        z-index: -1
+        transition: 0.4s all
+=circle-center
+    &::before
+        transform: translateX(-50%)
+        left: 50%
+=icons
+    img
+        position: absolute
+        left: -45px
+        top: 13px
+        transition: 0.4s all
+
+=svg-hover
+    svg
+        path
+            transition: 0.4s all
+        &:hover
+            path
+                fill: $main-color-1

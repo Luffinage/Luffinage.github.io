@@ -1,0 +1,142 @@
+.catalog
+    padding-bottom: 100px
+    &__tabs
+        margin-top: 70px
+        margin-bottom: 0
+        padding-left: 0
+        list-style: none
+        display: flex
+        justify-content: center
+        align-items: center
+    &__tab
+        margin: 0 5px
+        width: 220px
+        height: 50px
+        border: 2px solid #d0d0d0
+        color: #6b6b6b
+        font-size: 18px
+        font-weight: 400
+        text-transform: uppercase
+        text-align: center
+        line-height: 48px
+        transform: skewX(-25deg)
+        cursor: pointer
+        transition: 0.3s all
+        div
+            transform: skewX(25deg)
+        &:hover
+            border: none
+            box-shadow: 3px 3px 20px $red
+        &_active
+            color: #fff
+            background: $red
+            border: none
+    &__content
+        display: none
+        margin-top: 60px
+        // justify-content: space-between
+        flex-wrap: wrap
+        &_active
+            display: flex
+    &-item
+        width: 300px
+        min-height: 440px
+        border: 2px solid #c8c8c8
+        padding: 20px 20px 26px 20px
+        margin: 0 auto 20px auto
+        overflow: hidden
+        img
+            animation-play-state: paused
+            &:hover
+                animation-play-state: running
+        &__img
+            display: block
+            margin: 0 auto
+            max-width: 100%
+            height: 200px
+        &__subtitle
+            text-align: center
+            margin-top: 20px
+            font-weight: 700
+            font-size: 16px
+            color: #0d0d0d
+        &__descr
+            margin-top: 16px
+            font-weight: 300
+            font-size: 14px
+            text-align: center
+        &__link
+            margin-top: 17px
+            text-align: center
+            display: block
+        hr
+            margin: 19px auto 21ox auto
+            background: #e8e8e8
+            border-bottom: none
+        &__footer
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &__old-price
+            text-decoration: line-through
+            font-size: 14px
+            color: #555555
+            font-weight: 300
+        &__price
+            color: #050505
+            font-size: 20px
+            font-weight: 700
+        &__wrapper
+            display: flex
+            width: calc( 200% + 40px )
+            // width: 200%
+            overflow: hidden
+        &__content
+            width: 50%
+            margin-right: 0
+            transform: translateX(-100%)
+            transition: 0.4s all
+            &_active
+                transform: translateX(0%)
+                margin-right: 20px
+        &__list
+            width: 50%
+            margin-left: 20px
+            margin-bottom: 0
+            padding-left: 19px
+            padding-right: 20px
+            transform: translateX(0%)
+            transition: 0.4s all
+            list-style: none
+            &_active
+                transform: translateX(-100%)
+                margin-left: 0px
+            li
+                position: relative
+                color: #555555
+                font-weight: 300
+                font-size: 14px
+                margin-bottom: 20px
+                &:before
+                    content: ''
+                    position: absolute
+                    left: -14px
+                    top: 7px
+                    width: 5px
+                    height: 5px
+                    background: $red
+                &:last-child
+                    position: absolute
+                    bottom: 0
+                    left: 50%
+                    transform: translateX(calc( -50% - 19px ))
+                    display: block
+                    margin-bottom: 0
+                    &::before
+                        display: none
+        // &_back
+        //     position: absolute
+        //     bottom: 0
+        //     left: 50%
+        //     transform: translateX(calc( -50% - 19px ))
+        //     display: block

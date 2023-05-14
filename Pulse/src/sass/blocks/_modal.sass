@@ -1,0 +1,53 @@
+.overlay
+    display: none
+    position: fixed
+    top: 0
+    width: 100vw
+    height: 100vh
+    background: rgba(0, 0, 0, 0.56)
+    justify-content: center
+    align-items: center
+.modal
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background: #F2F2F2
+    padding: 40px
+    width: 380px
+    &__close
+        position: absolute
+        widows: 21px
+        line-height: 21px
+        top: 0px
+        right: -40px
+        font-size: 50px
+        color: $red
+        cursor: pointer
+        transition: 0.1s all        
+        &:hover
+            color: #000
+    &__subtitle
+        font-weight: 700
+        font-size: 18px
+        text-align: center
+        color: #0D0D0D
+    &__descr
+        font-weight: 700
+        font-size: 14px
+        text-align: center
+        color: #0D0D0D
+    &_mini
+        padding: 40px 70px
+        min-height: 140px
+    .error
+        text-align: center
+        border: 1px solid red
+        &::placeholder
+            color: red
+    label.error
+        border: none
+        color: red
+#consultation, #order, #thanks
+    display: none
+

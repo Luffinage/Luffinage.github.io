@@ -1,0 +1,157 @@
+@media (width<1440px)
+    .aside
+        display: none
+@media (width<=1200px)
+    .container
+        width: 960px
+    .about
+        grid-template: auto / 400px auto
+        gap: 30px
+        &__text
+            padding-right: 0
+    .experience
+        padding-left: 10px
+        padding-right: 10px
+        &__items
+            padding-left: 0
+            padding-right: 0
+        &__item-descr
+            width: auto
+    .skills
+        &__items
+            grid-template-columns: repeat(3, 270px)
+        &__scale
+            &-wrapper
+                grid-template-columns: repeat(2, 350px)
+    .portfolio
+        &__items
+            grid-template-columns: repeat(auto-fit, 280px)
+            gap: 40px
+        &__item
+            &:nth-child(4), &:nth-child(6)
+                grid-row: unset
+                grid-column: unset
+@media (width<=992px)
+    .container
+        width: 720px
+    .about
+        pointer-events: none
+        grid-template-columns: 350px auto
+        &__title
+            font-size: 30px
+        &__items
+            grid-template-columns: 1fr
+    .experience
+        &__items
+            grid-template: auto / 1fr
+    .skills
+        &__items
+            grid-template-columns: repeat(2, 270px)
+        &__scale
+            &-wrapper
+                gap: 30px 40px
+    .price
+        &__items
+            grid-template-columns: repeat(auto-fit, 370px)
+            justify-content: center
+    .contacts
+        grid-template: 350px auto / 1fr
+        &__photo
+            img
+                object-fit: cover
+                object-position: 50% 20%
+
+@media (width<=768px)
+    .container
+        width: 540px
+    .promo
+        min-height: 100vh
+    .about
+        padding-top: 20px
+        padding-bottom: 20px
+        grid-template: 500px auto / 1fr
+        gap: 40px
+        &__photo
+            img
+                object-position: 50% 0%
+        &__title
+            font-size: 40px
+    .experience
+        padding-top: 20px
+        padding-bottom: 20px
+        grid-template: auto / 1fr
+        &__descr
+            grid-column: 1 / 2
+    .skills
+        .divider
+            margin-bottom: 40px
+        &__wrapper
+            padding: 20px 0
+        &__scale
+            &-wrapper
+                grid-template-columns: 350px
+                padding: 20px 0
+    .portfolio
+        padding-top: 20px
+        .divider
+            margin-bottom: 40px
+    .price
+        padding-bottom: 30px
+        .divider
+            margin-bottom: 40px
+    .contacts
+        padding: 20px 10px 50px
+        gap: 40px
+@media (width<=600px)
+    
+    .skills
+        &__items
+            grid-template-columns: repeat(1, 270px)
+@media (width<=576px)
+    .container
+        width: 100%
+    .about, .skills, .experience, .portfolio, .price, .contacts
+        &__title
+            margin-bottom: 15px
+            font-size: 30px
+            line-height: 36px
+        &__subtitle
+            margin-bottom: 20px
+        .divider
+            margin-bottom: 20px
+    .contacts
+        &__button
+            grid-template: repeat(2, 45px) / 1fr
+            justify-items: center
+            button
+                order: 2
+        &__privacy
+            order: 1
+@media (width<=425px)
+    .menu
+        &__block
+            width: 250px
+    .promo
+        &__title
+            font-size: 26px
+            line-height: 39px
+    .about, .skills, .experience, .portfolio, .price, .contacts
+        &__title
+            font-size: 24px
+            line-height: 30px
+    .experience
+        &__item
+            padding-left: 40px
+            &-title
+                &::after
+                    left: -89px
+                    width: 30px
+    .skills
+        &__scale
+            &-wrapper
+                grid-template-columns: 300px
+                gap: 40px
+    .price
+        &__items
+            grid-template-columns: repeat(auto-fit, 310px)
+            gap: 30px

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/raleway/raleway-variablefont_wght-webfont.woff2") format("woff2"), url("/fonts/raleway/raleway-variablefont_wght-webfont.woff") format("woff"), url("/fonts/raleway/Raleway-VariableFont_wght.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway_italic";
+  src: url("../fonts/raleway/raleway-italic-variablefont_wght-webfont.woff2") format("woff2"), url("../fonts/raleway/raleway-italic-variablefont_wght-webfont.woff") format("woff"), url("../fonts/raleway/Raleway-Italic-VariableFont_wght.ttf") format("ttf");
+  font-weight: normal;
+  font-style: italic;
+}

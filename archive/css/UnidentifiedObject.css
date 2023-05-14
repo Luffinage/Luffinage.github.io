@@ -1,0 +1,8 @@
+
+        #thing {
+            position: relative;
+            left: 50px;
+            top: 50px;
+            transition: left 1s ease-in, top 1s ease-in;
+            z-index: 2;
+        }

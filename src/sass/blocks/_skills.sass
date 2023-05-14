@@ -1,0 +1,56 @@
+.skills
+    display: grid
+    grid-template: repeat(2, auto) / minmax(auto, 1140px)
+    justify-content: center
+    &__wrapper
+        padding: 60px 0
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__subtitle
+        +circle
+        +circle-center
+    &__title
+        margin-bottom: 25px
+        text-align: center
+    .divider
+        margin-bottom: 60px
+    &__items
+        display: grid
+        grid-template: repeat(2, 270px) / repeat(4, 270px)
+        grid-template-rows: auto
+        gap: 13px
+    &__item
+        border: 1px solid black
+        padding: 30px
+    &__img
+        height: 65px
+        display: flex
+        align-items: center
+        img
+            max-height: 65px
+    &__subsubtitle
+        margin: 20px 0 15px 0
+    &__descr
+        font-size: 12px
+        line-height: 18px
+        font-weight: 500
+    &__scale
+        background: #E8E4DE
+        height: 14px
+        margin-top: 19px
+        div
+            height: 100%
+            background: $main-color-1
+        &-wrapper
+            display: grid
+            grid-template: auto / repeat(3, 350px)
+            gap: 30px 45px
+            justify-content: center
+            padding: 60px 0
+        &-title
+            display: flex
+            justify-content: space-between
+            padding-left: 13px
+            line-height: 36px
+            +circle

@@ -1,0 +1,29 @@
+.hamburger
+    position: fixed
+    width: 40px
+    height: 23px
+    right: 10px
+    top: 10px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-end
+    span
+        display: block
+        width: 30px
+        height: 5px
+        background: #fff
+        border-radius: 20px
+        border: 1px solid black
+        transition: 0.3s all
+        &:nth-child(2)
+            width: 36px
+    &:hover
+        cursor: pointer
+        span
+            &:nth-child(1)
+                width: 36px
+            &:nth-child(2)
+                width: 30px
+            &:nth-child(3)
+                width: 36px

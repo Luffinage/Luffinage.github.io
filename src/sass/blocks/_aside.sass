@@ -1,0 +1,28 @@
+.aside
+    position: fixed
+    left: -120px
+    top: 230px
+    width: 340px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    transform: rotate(-90deg)
+    background: rgba(255, 255, 255, 0.8)
+    border-radius: 20px
+    padding: 2px 8px
+    &__social
+        order: 3
+        +svg-hover
+        svg
+            width: 20px
+            height: 20px
+            margin: 0 2px
+    &__line
+        width: 70px
+        height: 2px
+        background: #000
+        order: 2
+    &__descr
+        font-size: 16px
+        font-weight: 600
+        order: 1

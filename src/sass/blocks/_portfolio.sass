@@ -1,0 +1,39 @@
+.portfolio
+    display: grid
+    grid-template: repeat(2, auto) / minmax(auto, 1140px)
+    justify-content: center
+    padding: 60px 10px 30px
+    &__descr
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__subtitle
+        +circle
+        &::before
+            left: 50%
+            transform: translateX(-50%)
+    &__title
+        margin-bottom: 25px
+    .divider
+        margin-bottom: 60px
+    &__items
+        display: grid
+        grid-template: repeat(2, 280px) / repeat(4, 280px)
+        grid-auto-rows: 280px
+        justify-content: center
+        gap: 5px
+    &__item
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            transition: 0.3s all
+            &:hover
+                transform: scale(1.2)
+                border: 2px solid #fff
+        &:nth-child(4)
+            grid-row: 1 / 3
+            grid-column: 4 / 5
+        &:nth-child(6)
+            grid-row: 2 / 3
+            grid-column: 2 / 4

@@ -1,0 +1,24 @@
+.promo
+    width: 100%
+    height: 700px
+    background: url("../img/bg_1.jpg") center center/cover no-repeat
+    display: grid
+    grid-template: 120px 580px / repeat(2, 570px)
+    justify-content: center
+    &__header
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-column: 1 / 3
+    &__logo
+        margin-top: 40px
+    &__nav
+        margin-top: 60px
+    &__list
+        display: flex
+        justify-content: space-between
+        list-style: none
+    &__link
+        text-transform: uppercase
+        a
+            color: #fff
+            text-decoration: none

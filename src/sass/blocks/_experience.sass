@@ -1,0 +1,71 @@
+.experience
+    max-width: 1140px
+    display: grid
+    grid-template: repeat(2, auto) / repeat(2, 1fr)
+    padding: 60px 75px
+    gap: 45px 130px
+    margin: auto
+    &__descr
+        grid-column: 1 / 3
+        display: flex
+        flex-direction: column
+        text-align: center
+        align-items: center
+    &__title
+        margin-bottom: 25px
+    &__subtitle
+        +circle
+        &::before
+            left: 50%
+            transform: translateX(-50%)
+    &__items
+        display: grid
+        grid-template: auto  / 1fr
+        &-title
+            padding-left: 60px
+            +circle
+            &::before
+                width: 15px
+                height: 15px
+                left: 0
+                top: 50%
+                transform: translateY(-50%)
+                z-index: 2
+    &__item
+        position: relative
+        padding-top: 45px
+        padding-left: 60px
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            left: 7px
+            top: -18px
+            width: 1px
+            height: calc( 100% + 18px )
+            background: #000
+        &-title
+            margin-left: 56px
+            +icons
+            +circle
+            &::before
+                top: 0
+                left: -60px
+            &::after
+                content: ''
+                display: block
+                position: absolute
+                left: -109px
+                top: 15px
+                width: 50px
+                height: 1px
+                background: #000
+        &-subtitle
+            margin-left: 56px
+            font-size: 12px
+        &-descr
+            width: 375px
+            padding-top: 12px
+            font-size: 12px
+            line-height: 18px
+            font-weight: 500

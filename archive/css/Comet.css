@@ -1,0 +1,30 @@
+            /* Анимирование кометы */
+        .comet {
+            position: fixed;
+            right: -500px;
+            top: 0;
+            pointer-events: none;
+            animation: comet 8s ease-in-out infinite normal forwards ;
+        }
+
+        @keyframes comet {
+            0%{
+            top: 0;
+            right: -500px;
+        }
+            5%{
+            top: 0;
+            right: -500px;
+        }
+            15%{
+            top: 1000px;
+            right: 100vw;
+        }
+            100%{
+            top: 1000px;
+            right: 100vw;
+        }
+        }
+
+
+

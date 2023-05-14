@@ -1,0 +1,36 @@
+@media (width<=992px)
+    .hamburger
+        &:hover
+            cursor: pointer
+            span
+                &:nth-child(1)
+                    width: 30px
+                &:nth-child(2)
+                    width: 36px
+                &:nth-child(3)
+                    width: 30px
+    .menu,.aside,.contacts, .promo
+        svg
+            &:hover
+                path
+                    fill: #000
+        .button
+            &:hover
+                box-shadow: none
+    .menu
+        &__link
+            &:hover
+                a
+                    color: #fff
+                &::before
+                    background: none
+    .portfolio
+        img
+            &:hover
+                transform: scale(1)
+                border: none
+    .price
+        &__name
+            &:hover::before
+                width: 15px
+                border-radius: 50%
