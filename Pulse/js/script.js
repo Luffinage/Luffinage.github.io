@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  //Carousel
   $(".carousel__inner").slick({
     // infinite: false,
     // slidesToShow: 2,
