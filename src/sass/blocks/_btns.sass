@@ -1,7 +1,7 @@
 .button
     display: block
     padding: 12px 25px
-    background: $main-color-1
+    background: $main-color
     color: #000
     font-size: 14px
     font-weight: 700
@@ -12,3 +12,7 @@
         color: #000
         text-decoration: none
         box-shadow: inset 0px 0px 5px #000
+.close
+    transition: transform 0.4s
+    &:hover
+        transform: rotate(180deg)
