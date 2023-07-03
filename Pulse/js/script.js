@@ -131,3 +131,26 @@ $(document).ready(function () {
   });
   new WOW().init();
 });
+
+// Найти все якорные ссылки на странице
+const anchorLinks = document.querySelectorAll('a[href^="#"]');
+
+// Добавить обработчик события клика для каждой якорной ссылки
+anchorLinks.forEach(anchorLink => {
+  anchorLink.addEventListener('click', smoothScroll);
+});
+
+// Функция для плавного прокручивания страницы к целевому элементу
+function smoothScroll(event) {
+  // Отменить стандартное действие ссылки
+  event.preventDefault();
+
+  // Получить идентификатор целевого элемента из атрибута href якорной ссылки
+  const targetElementId = this.getAttribute('href').substring(1);
+
+  // Найти целевой элемент на странице
+  const targetElement = document.getElementById(targetElementId);
+
+  // Плавно прокрутить страницу к целевому элементу
+  targetElement.scrollIntoView({ behavior: 'smooth' });
+}
