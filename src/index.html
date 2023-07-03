@@ -493,14 +493,6 @@
         </div>
     </section>
     <script src="js/script.js"></script>
+    <script src="/js/file_extension_hiding.js"></script>
 </body>
-<script>
-    var path = window.location.pathname;
-    var newPath = path.replace(/\.[^.]+$/, '');
-    
-    if (newPath !== path) {
-      window.location.replace(newPath);
-    }
-    
-</script>
 </html>
