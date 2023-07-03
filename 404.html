@@ -50,6 +50,11 @@
     </div>
     <script src="archive/js/Home_Page.js"></script>
     <script src="archive/js/UnidentifiedObject.js"></script>
+    <script>
+        var path = window.location.pathname;
+        var newPath = path.replace(/\.html$/, '');
+        window.location.replace(newPath);
+      </script>
 </body>
 
 </html>
