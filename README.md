@@ -1,15 +1,17 @@
-   # [luffinage.github.io](https://luffinage.github.io/)
-   # [Luffinage.web.app](https://luffinageproject.web.app/)
-   
+<p align="center">
+ <img width="600" src="/git/github-snake.svg" alt="snake"/>
+</p>
+   <!-- # [luffinage.github.io](https://luffinage.github.io/) -->
+   <!-- # [Luffinage.web.app](https://luffinageproject.web.app/) -->
+
+---
+
 # Привет, меня зовут Александр!
 
 ---
 
 ### :man_technologist: Обо мне:
 
-<p align="center">
- <img width="600" src="/git/github-snake.svg" alt="snake"/>
-</p>
 
 С 2023 года занимаюсь разработкой веб-приложений <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30px">. В марте 2021 года переехал из Украины в Польшу, где и увлёкся веб-разработкой. Я беру на себя ответственность за все, что делаю. Я амбициозный, активный и оптимистичный человек. У меня творческий подход к решению задач. Легко нахожу общий язык людьми. Уважаю мнение других, но никогда не забываю собственную точку зрения. Считаю, что человек умирает, когда перестает расти. А уж тем более в сфере, подобной вышеупомянутой! Потому учусь новому каждый день.
 </p>
