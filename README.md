@@ -1,5 +1,5 @@
+<h1 align="center">Привет, меня зовут Александр!<h1>
 <p align="center">
-# Привет, меня зовут Александр!
  <img width="600" src="/git/github-snake.svg" alt="snake"/>
 </p>
    <!-- # [luffinage.github.io](https://luffinage.github.io/) -->
